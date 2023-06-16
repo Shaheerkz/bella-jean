@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&family=Poppins:wght@200;300;400;600;800;900&display=swap');
+
+/* --------------------------- Navbar Section Css------------------------------- */
+
+header {
+    background-image: url(/resources/images/banner-background.png);
+    background-position: top-center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item a{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    z-index: 111;
+    position: relative;
+}
+button:focus:not(:focus-visible){
+    box-shadow: none;
+}
+
+.nav-content a::before{
+   content: '';
+   width: 0%;
+   height: 5px;
+   position: absolute;
+   top: -35px;
+   background-color: blue;
+   display: block;
+   transition: 0.4s;
+}
+.nav-content a:hover::before{
+    width: 100%;
+}
+.wrapper{
+    position: relative;
+    top: 5%;
+    background-image: url(/resources/images/layer.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-nav{
+    z-index: 111;
+}
+
+/* --------------------------- Banner Section Css------------------------------- */
+.banner-column{
+    z-index: 111;
+}
