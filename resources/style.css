@@ -1,3 +1,13 @@
+/* --------------------------- Variables-------------------------------
+:root{
+    --primary--
+} */
+
+
+
+
+/* --------------------------- Font Families Links------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&family=Poppins:wght@200;300;400;600;800;900&display=swap');
 
 /* --------------------------- Navbar Section Css------------------------------- */
@@ -10,7 +20,7 @@ header {
 }
 .nav-item a{
     font-family: 'Playfair Display', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #000;
     text-decoration: none;
@@ -26,7 +36,7 @@ button:focus:not(:focus-visible){
    width: 0%;
    height: 5px;
    position: absolute;
-   top: -35px;
+   top: -75px;
    background-color: blue;
    display: block;
    transition: 0.4s;
@@ -49,4 +59,54 @@ button:focus:not(:focus-visible){
 /* --------------------------- Banner Section Css------------------------------- */
 .banner-column{
     z-index: 111;
+}
+.banner-image{
+    position: relative;
+}
+.sub-title{
+    font-size: 16px;
+    font-family: 'Robboto',sans-serif;
+    line-height: 35px;
+    font-weight: 300;
+    color: #0a0909;
+}
+.content-banner h1{
+    font-size: 3.225rem;
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 78px;
+    font-weight: 800;
+}
+
+
+
+.banner-image::after{
+    content: '01';
+    font-size: 3.5rem;
+    bottom: -3px;
+    position: absolute;
+    left: -92px;
+    padding: 15px;
+    color: #fff;
+    background-color: darkblue;
+}
+.banner-image::before{
+    content: 'SALE UPTO 35%';
+    position: absolute;
+    bottom: 82px;
+    right: -34px;
+    color: #000;
+    writing-mode: vertical-rl;
+}
+.bannerslide-btn{
+    margin-left: 79%;
+}
+.bannerslide-btn .slide-btn{
+    border-right: 1px solid #000;
+}
+.bannerslide-btn a{
+    color: #fff;
+    transition: 0.4s;
+}
+.bannerslide-btn a:hover{
+    color: rgb(199, 193, 111);
 }
