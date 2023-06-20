@@ -34,12 +34,11 @@ button:focus:not(:focus-visible){
 .nav-content a::before{
    content: '';
    width: 0%;
-   height: 5px;
+   height: 3px;
    position: absolute;
    top: -75px;
    background-color: blue;
    display: block;
-   transition: 0.4s;
 }
 .nav-content a:hover::before{
     width: 100%;
@@ -57,6 +56,9 @@ button:focus:not(:focus-visible){
 }
 
 /* --------------------------- Banner Section Css------------------------------- */
+.banner{
+    transition: 300ms;
+}
 .banner-column{
     z-index: 111;
 }
@@ -65,7 +67,7 @@ button:focus:not(:focus-visible){
 }
 .sub-title{
     font-size: 16px;
-    font-family: 'Robboto',sans-serif;
+    font-family: 'Roboto',sans-serif;
     line-height: 35px;
     font-weight: 300;
     color: #0a0909;
@@ -78,41 +80,48 @@ button:focus:not(:focus-visible){
 }
 
 .sub-content{
-    font-family: 'Robboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 900;
     line-height: 32px;
     color: #0a0909;
 }
+.banner-image{
+    margin-top: 3rem;
+}
 .content-banner a{
-    font-family: 'Robboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    transition: 0.6s;
+    background-color: darkblue;
+    color: #fff;
+    transition: 0.4s;
 }
 .content-banner a:hover{
+    color: #fff;
     transform: translate(-1px,-8px);
--webkit-transform: translate(-1px,-8px);
--moz-transform: translate(-1px,-8px);
-box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
+    -webkit-transform: translate(-1px,-8px);
+    -moz-transform: translate(-1px,-8px);
+    box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
 }
 
 .banner-image::after{
     content: '01';
-    font-size: 3.5rem;
-    bottom: -2px;
+    font-size: 4.5rem;
+    bottom: -1px;
     position: absolute;
-    left: -102px;
-    padding: 15px 20px;
+    left: -148px;
+    padding: 26px 33px;
     color: #fff;
-    background-color: darkblue;
+    background-color: blue;
 }
 .banner-image::before{
     content: 'SALE UPTO 35%';
     position: absolute;
     bottom: 82px;
+    font-family: 'Robotto', sans-serif;
     right: -34px;
     color: #000;
     writing-mode: vertical-rl;
@@ -140,4 +149,264 @@ box-shadow: 0px 7px 24px -12px rgba(0,0,0,0.75);
     top: -60px;
     left: 30px;
     color: #fff;
+}
+
+
+/* --------------------------- Popular Products Section Css------------------------------- */
+
+
+.card{
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    
+}
+.card-tap{
+    background-color: #f4f4f4;
+    transition: 0.6s;
+}
+.card-tap:hover{
+    background-color: #fff;
+}
+.card:hover{
+    transform: translate(-1px,-7px);
+    -webkit-transform: translate(-1px,-7px);
+    -moz-transform: translate(-1px,-7px);
+    box-shadow: 10px 8px 23px -8px rgba(179,165,165,0.75);
+    -webkit-box-shadow: 10px 8px 23px -8px rgba(179,165,165,0.75);
+    -moz-box-shadow: 10px 8px 23px -8px rgba(179,165,165,0.75);
+}
+.card-tap::after{
+    content: '-10%';
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(253, 145, 4);
+    color: #fff;
+    font-weight: 500;
+}
+.top-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: lightgray;
+    transition: 0.6s ease-in;
+    display: none;
+}
+.card:hover .top-icon{
+    display: flex;
+    flex-direction: column;
+}
+.top-icon i{
+    padding: 15px;
+}
+.head p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.head h1{
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.del-text span{
+    color: orange;
+    margin-left: 10px;
+}
+
+.card-icon i{
+    font-weight: 400;
+    font-size: 10px;
+    transition: 0.3s;
+}
+.card-icon i:hover{
+    color: orange;
+}
+
+/* --------------------------- therapy section css------------------------------- */
+.therapy{
+    background-image: url(/resources/images/therapy-discovery.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-discovery h1{
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    line-height: 100px;
+}
+.content-discovery p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+.content-discovery a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.content-discovery a:hover{
+    color: #fff;
+    transform: translate(-1px,-8px);
+    -webkit-transform: translate(-1px,-8px);
+    -moz-transform: translate(-1px,-8px);
+}
+
+
+
+/* --------------------------- Deals Section css------------------------------- */
+
+
+.deal-head p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0a0909;
+}
+.deal-head h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #000;
+}
+.content-head h4{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.card-mate::after{
+    content: '-15%';
+    position: absolute;
+    padding: 0px 5px;
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: darkgoldenrod;
+    color: #fff;
+    font-weight: 500;
+}
+.card-mate-change::after{
+    content: '-50%';
+    position: absolute;
+    padding: 0px 5px;
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: darkgoldenrod;
+    color: #fff;
+    font-weight: 500;
+}
+.card-mate-change::before{
+    content: 'Hot';
+    position: absolute;
+    padding: 0px 10px;
+    border-radius: 5px;
+    top: 48px;
+    left: 10px;
+    background-color: darkolivegreen;
+    color: #fff;
+    font-weight: 500;
+}
+
+.content-foot p span{
+    color: greenyellow;
+}
+.content-wrapper{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 0;
+    padding: 0px 13px;
+}
+
+/* --------------------------- User Review css------------------------------- */
+
+
+
+.review-content h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+.review-content p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.review-content h5 span{
+    color: green;
+    font-weight: 400;
+}
+
+
+
+
+/* --------------------------- Fotter Section css------------------------------- */
+
+.end-side{
+    background-color: #222222;
+}
+.footer-text .unorder-list h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 70px;
+    color: #fff;
+}
+.footer-text .unorder-list li{
+    list-style: none;
+    color: #cecece;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.footer-text .unorder-list li:hover{
+    color: #748a53;
+    cursor: pointer;
+}
+
+/* --------------------------- Media query css------------------------------- */
+
+@media(max-width:1399px){
+    .banner-image{
+        margin-top: 110px;
+    }
+}
+
+@media(max-width:1199px){
+    .banner-image{
+        margin-top: 174px;
+    }
+    .banner-image::after {
+        left: -115px;
+        padding: 16px 17px;
+    }
+}
+
+@media(max-width:992px){
+    .content-banner{
+        text-align: center;
+    }
+    .banner-image{
+        margin-top: 0px;
+    }
+    .banner-image{
+        display: flex;
+        justify-content: center;
+    }
+    .banner-image::after,.banner-image::before{
+        display: none;
+    }
+    
 }
