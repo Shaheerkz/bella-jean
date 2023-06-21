@@ -372,7 +372,7 @@ button:focus:not(:focus-visible){
 }
 .footer-text .unorder-list li{
     list-style: none;
-    color: #cecece;
+    color: #aaa;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -386,7 +386,7 @@ button:focus:not(:focus-visible){
 .pay-app i{
     margin-left: 30px;
     transition: 0.2s;
-    color: #cecece;
+    color: #aaa;
 }
 .pay-app i:hover{
     color: #748a53;
